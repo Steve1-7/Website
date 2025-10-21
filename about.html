@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me | Steve Ronald</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1LPM2QHTLW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1LPM2QHTLW');
+  </script>
+
+  <style>
+    /* Mobile Menu Fix */
+    nav .fa-bars,
+    nav .fa-times {
+      display: none;
+      cursor: pointer;
+      font-size: 24px;
+      color: var(--green-light);
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        position: fixed;
+        background: var(--dark);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 100;
+        transition: 0.4s;
+        padding-top: 60px;
+      }
+
+      .nav-links ul li {
+        display: block;
+        margin: 25px 20px;
+      }
+
+      nav .fa-bars,
+      nav .fa-times {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== HEADER SECTION ===== -->
+  <header class="header about-header">
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGL62_052OjQA/profile-displayphoto-shrink_800_800/B4DZdjLrz7GUAg-/0/1749715699989?e=1763596800&v=beta&t=255evhrrHLzkllN9fQxsjbumfrI-MNY_R47XmAogWbo" alt="Steve Ronald Logo"/>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html" class="active">ABOUT ME</a></li>
+          <li><a href="#experience">EXPERIENCE</a></li>
+          <li><a href="#education">EDUCATION</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box animate__animated animate__fadeIn">
+      <h1>About Me</h1>
+      <h4>My Journey, Skills & Professional Background</h4>
+      <p>
+        I’m <strong>Steve Ronald</strong>, a versatile digital professional blending software development, design, and marketing expertise. 
+        I create meaningful digital experiences that are both functional and visually engaging.
+      </p>
+      <a href="contact.html" class="hero-btn">Get in Touch</a>
+    </div>
+  </header>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="skills" id="skills">
+    <h1>My Core Skills</h1>
+    <p>
+      My multidisciplinary skill set allows me to deliver impactful solutions across design, development, and marketing.
+    </p>
+
+    <div class="row">
+      <div class="skills-col">
+        <h3><i class="fa-solid fa-palette"></i> Design Tools</h3>
+        <p>Adobe Photoshop, Illustrator, InDesign, After Effects, Figma, Canva, Blender, Adobe Express.</p>
+      </div>
+
+      <div class="skills-col">
+        <h3><i class="fa-solid fa-bullhorn"></i> Marketing Tools</h3>
+        <p>HubSpot, Google Analytics, Mailchimp, SEMrush, Ahrefs, Hootsuite, Buffer, Sprout Social.</p>
+      </div>
+
+      <div class="skills-col">
+        <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+        <p>JavaScript, Python, C++, C#, Ruby, Swift.</p>
+      </div>
+
+      <div class="skills-col">
+        <h3><i class="fa-solid fa-laptop-code"></i> Development Tools</h3>
+        <p>VS Code, IntelliJ, Sublime Text, GitHub, Bitbucket, Docker, Android Studio.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section class="skills" id="experience">
+    <h1>Professional Experience</h1>
+    <p>Here’s a snapshot of my professional journey, highlighting design, development, and marketing roles.</p>
+
+    <div class="row">
+      <div class="skills-col">
+        <h3><i class="fa-solid fa-pen-ruler"></i> Graphic Design & Branding</h3>
+        <p>
+          Worked on logos, branding, print, and digital campaigns for multiple clients.<br>
+          <strong>Companies:</strong><br>
+          • <b>Shagary Petroleum</b> — Graphic design & marketing<br>
+          • <b>SteveMediaCo</b> — UI/UX design & content creation
+        </p>
+      </div>
+
+      <div class="skills-col">
+        <h3><i class="fa-solid fa-code"></i> Web & Software Development</h3>
+        <p>
+          Front-end and back-end development using HTML, CSS, JavaScript, Python.<br>
+          <strong>Companies:</strong><br>
+          • <b>SteveMediaCo</b> — Full-stack development & strategy<br>
+          • <b>Saseka Holdings</b> — Full-stack development & strategy<br>
+          • <b>Shagary Petroleum</b> — Web development & Search Engine Optimization
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="skills-col">
+        <h3><i class="fa-solid fa-share-nodes"></i> Social Media Management</h3>
+        <p>
+          Building brand engagement and growing online presence across multiple platforms.<br>
+          <strong>Companies:</strong><br>
+          • <b>Saseka Woodworks</b> — Social media campaigns<br>
+          • <b>Greenland Projects</b> — Online engagement
+        </p>
+      </div>
+
+      <div class="skills-col">
+        <h3><i class="fa-solid fa-bullhorn"></i> Digital Marketing & SEO</h3>
+        <p>
+          Crafting strategies for content, SEO, and online visibility.<br>
+          <strong>Companies:</strong><br>
+          • <b>Greenland Projects</b><br>
+          • <b>Shagary Petroleum</b><br>
+          • <b>Saseka Woodworks</b>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section class="skills" id="education">
+    <h1>Education & Certifications</h1>
+    <p>Formal education and certifications shaping my expertise in technology and design.</p>
+
+    <div class="row">
+      <div class="skills-col">
+        <h3><i class="fa-solid fa-school"></i> High School</h3>
+        <p>Completed Grade 12 with strong results in Computer Applications, Math, Business Studies, and Design.</p>
+      </div>
+
+      <div class="skills-col">
+        <h3><i class="fa-solid fa-certificate"></i> Certifications</h3>
+        <p>
+          • SEO — HubSpot Academy<br>
+          • Business Administration — Alison Academy<br>
+          • Digital Marketing — Green Learning Academy<br>
+          • Python Programming — edX
+        </p>
+      </div>
+
+      <div class="skills-col">
+        <h3><i class="fa-solid fa-laptop-code"></i> Advanced Studies</h3>
+        <p>Pursuing advanced courses in Software Engineering, Full-Stack Development, and Design Innovation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <h4>About Me</h4>
+    <p>
+      I’m open to collaborating on creative and tech-driven projects. Let’s connect and make something remarkable together.
+    </p>
+    <div class="icons">
+      <a href="https://www.facebook.com/profile.php?id=61576484516833" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/steveeazie/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/steve-ronald1710s/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+   <p>© 2025 <strong>Steve17</strong>. All Rights Reserved.</p>
+  </footer>
+
+  <!-- ===== MOBILE MENU SCRIPT ===== -->
+  <script>
+    const navLinks = document.getElementById("navLinks");
+    const bars = document.querySelector(".fa-bars");
+    const times = document.querySelector(".fa-times");
+
+    function showMenu() { navLinks.style.right = "0"; }
+    function hideMenu() { navLinks.style.right = "-200px"; }
+
+    // Close menu on link click
+    document.querySelectorAll(".nav-links ul li a").forEach(link => {
+      link.addEventListener("click", hideMenu);
+    });
+  </script>
+</body>
+</html>

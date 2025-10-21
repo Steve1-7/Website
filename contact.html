@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Steve Zulu</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1LPM2QHTLW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1LPM2QHTLW');
+</script>
+</head>
+<body class="contact-page">
+
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="https://media.licdn.com/dms/image/v2/D4D03AQGL62_052OjQA/profile-displayphoto-shrink_800_800/B4DZdjLrz7GUAg-/0/1749715699989?e=1762992000&v=beta&t=PY0Obay14gyeQo2gVo5t2YzsAHkhK6IlIvzm4r0311c" alt="Steve Zulu Logo">
+    </div>
+    <div class="nav-links" id="navLinks">
+        <!-- FIXED onclick (must include parentheses) -->
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="work.html">My Work</a></li>
+          <li><a href="contact.html">Contact</a>
+</li>
+        </ul>
+      </div>
+
+      <!-- Mobile icon -->
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+  </nav>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="contact-section">
+    <h2>Contact Me</h2>
+    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+    
+    <div class="contact-info">
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Johannesburg, South Africa</span>
+      </div>
+      <div class="map-link">
+  <a href="https://maps.app.goo.gl/DNHeozjEjV5axkYV9" target="_blank" class="rainbow-btn">
+    <i class="fas fa-map-marker-alt"></i> View on Map
+  </a>
+</div>
+
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <span>+27 676 28 3210</span>
+      </div>
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <span>stevezuluu@gmail.com</span>
+      </div>
+      <div class="social-icons">
+         <a href="https://www.facebook.com/profile.php?id=61576484516833" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/steveeazie/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/steve-ronald1710s/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <form action="https://formspree.io/f/mldpaavk" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <!-- ===== JAVASCRIPT ===== -->
+  <script>
+    const navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";  // menu slides in
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";  // menu slides out
+    }
+  </script>
+ 
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>© 2025 <strong>Steve17</strong>. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
